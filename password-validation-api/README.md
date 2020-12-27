@@ -11,7 +11,7 @@ Essa API tem a função de validar a senha recebida de acordo com as regras pré
 
 # Git
 
-- https://github.com/AndersonMuniz/backendChallenge
+- https://github.com/AndersonMuniz/passwordValidationApi
 
 # Archetype
 
