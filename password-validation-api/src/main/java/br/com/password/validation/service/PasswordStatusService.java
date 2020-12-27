@@ -23,7 +23,7 @@ public class PasswordStatusService {
         wordValidation = new WordValidationService(this.word);
 
         wordValidation.AddList();
-        
+
         LOG.debug("Fim do método PasswordStatusService");
     }
 

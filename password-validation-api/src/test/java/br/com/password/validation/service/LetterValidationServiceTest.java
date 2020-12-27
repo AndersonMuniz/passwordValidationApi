@@ -1,9 +1,11 @@
 package br.com.password.validation.service;
 
 import org.junit.Assert;
+import org.junit.Test;
 
 public class LetterValidationServiceTest {
 
+    @Test
     public void casefalse1() {
 
         LetterValidationService letterValidationService = new LetterValidationService("");
@@ -11,6 +13,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse2() {
 
         LetterValidationService letterValidationService = new LetterValidationService("aa");
@@ -18,6 +21,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse3() {
 
         LetterValidationService letterValidationService = new LetterValidationService("ab");
@@ -25,6 +29,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse4() {
 
         LetterValidationService letterValidationService = new LetterValidationService("AAAbbbCc");
@@ -32,6 +37,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse5() {
 
         LetterValidationService letterValidationService = new LetterValidationService("AbTp9!foo");
@@ -39,6 +45,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse6() {
 
         LetterValidationService letterValidationService = new LetterValidationService("AbTp9!foA");
@@ -46,6 +53,7 @@ public class LetterValidationServiceTest {
 
     }
 
+    @Test
     public void casefalse7() {
 
         LetterValidationService letterValidationService = new LetterValidationService("AbTp9 fok");
@@ -53,10 +61,4 @@ public class LetterValidationServiceTest {
 
     }
 
-    public void casetrue1() {
-
-        LetterValidationService letterValidationService = new LetterValidationService("AbTp9!fok");
-        Assert.assertTrue(letterValidationService.LetterValidationFind());
-
-    }
 }

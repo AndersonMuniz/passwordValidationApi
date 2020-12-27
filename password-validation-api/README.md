@@ -42,4 +42,4 @@ Essa API tem a função de validar a senha recebida de acordo com as regras pré
 # Solução
 
 - Tentei utilizar apenas os conhecimentos adquiridos até o momento para chegar a proposta de solução. A lógica utilizada foi de armazenar a senha em um Array e validar os caracteres necessários para retornar se a String é válida ou não.
-- Ao executar o projeto é criado um arquivo na pasta do projeto com o nome password-validation-api, este arquivo é onde ficam armazendos os Log (configurado inicialmente para "INFO"). O Log irá gerar um novo arquivo quando o atual atingir com o tamanho de 50 Megas com no máximo 10 versões, após isso é sobrescrita a versão mais antiga 
+- Ao executar o projeto é criado um arquivo na pasta do projeto com o nome password-validation-api, este arquivo é onde ficam armazendos os Log (configurado inicialmente para "INFO"). O Log irá gerar um novo arquivo e quando o atual atingir com o tamanho de 50 Megas com no máximo 10 versões, após isso é sobrescrita a versão mais antiga 
