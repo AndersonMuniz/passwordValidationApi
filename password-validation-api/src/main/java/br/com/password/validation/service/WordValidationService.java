@@ -4,33 +4,16 @@ import br.com.password.validation.controller.PasswordController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-
 import static br.com.password.validation.constants.Constants.TAMANHO_MINIMO;
 
-public class WordValidationService extends LetterValidationService {
+public class WordValidationService {
     private static final Logger LOG = LoggerFactory.getLogger(PasswordController.class);
 	private String word;
 
     public WordValidationService(String password) {
-        super(password);
-
         LOG.debug("Construtor WordValidationService {}" , password);
 
     	this.word = password;
-    }
-
-    private static ArrayList lista = new ArrayList<Character>();
-
-    public void AddList () {
-
-        LOG.debug("Início do método AddList {}" , this.word);
-
-        for (int i=0; i<this.word.length(); i++) {
-            lista.add(this.word.charAt(i));
-        }
-
-        LOG.debug("Fim do método AddList");
     }
 
     public boolean ValidationSizeMin () {
