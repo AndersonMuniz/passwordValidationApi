@@ -42,7 +42,7 @@ public class PasswordStatusService {
         // Se a senha estiver com espaços retorna falso
         validationReturn = wordValidation.NoSpaceChar();
         
-        LOG.info("2 - Não tem espaço: " + validationReturn);
+        LOG.info("2 - Não tem espaço: {} " , validationReturn);
         
         if (validationReturn == false) {
             return false;
@@ -50,7 +50,7 @@ public class PasswordStatusService {
 
         validationReturn = wordValidation.SpecialChar();
         
-        LOG.info("3 - Tem caracter especial: " + validationReturn);
+        LOG.info("3 - Tem caracter especial: {} " , validationReturn);
         
         if (validationReturn == false) {
             return false;
@@ -58,7 +58,7 @@ public class PasswordStatusService {
 
         validationReturn = wordValidation.isNumeric();
         
-        LOG.info("4 - Tem número: " + validationReturn );
+        LOG.info("4 - Tem número: {} " , validationReturn );
         
         if (validationReturn == false) {
             return false;
@@ -66,7 +66,7 @@ public class PasswordStatusService {
 
         validationReturn = wordValidation.isLetter();
         
-        LOG.info("5 - Tem letra: " + validationReturn );
+        LOG.info("5 - Tem letra: {} " , validationReturn );
         
         if (validationReturn == false) {
             return false;
@@ -74,7 +74,7 @@ public class PasswordStatusService {
 
         validationReturn = wordValidation.UpperCase();
         
-        LOG.info("6 - Tem letra maiuscula: " + validationReturn);
+        LOG.info("6 - Tem letra maiuscula: {} " , validationReturn);
         
         if (validationReturn == false) {
             return false;
@@ -82,7 +82,7 @@ public class PasswordStatusService {
         
         validationReturn = wordValidation.LowerCase();
         
-        LOG.info("7 - Tem letra minuscula: " + validationReturn);
+        LOG.info("7 - Tem letra minuscula: {} " , validationReturn);
         
         if (validationReturn == false) {
             return false;
@@ -90,7 +90,7 @@ public class PasswordStatusService {
 
         validationReturn = wordValidation.NoEqualChar();
         
-        LOG.info("8 - Não tem caracter repetido: " + validationReturn);
+        LOG.info("8 - Não tem caracter repetido: {} " , validationReturn);
         
         if (validationReturn == false) {
             return false;
