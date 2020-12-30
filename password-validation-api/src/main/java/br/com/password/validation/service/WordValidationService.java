@@ -16,7 +16,7 @@ public class WordValidationService {
     	this.word = password;
     }
 
-    public boolean ValidationSizeMin () {
+    public boolean ValidationSizeMin() {
 
         LOG.debug("Início do métodoo ValidationSizeMin");
 
@@ -64,7 +64,7 @@ public class WordValidationService {
 
     }
 
-    public boolean isNumeric () {
+    public boolean IsNumeric () {
         char currentChar;
         boolean returnValidation = false;
 
@@ -81,7 +81,7 @@ public class WordValidationService {
         return returnValidation;
     }
 
-    public boolean isLetter () {
+    public boolean IsLetter () {
         char currentChar;
         boolean returnValidation = false;
 

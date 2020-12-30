@@ -1,22 +1,16 @@
 package br.com.password.validation.controller;
 
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.JsonPath;
+import org.json.JSONException;
 import org.junit.Assert;
 import org.junit.Test;
+import org.skyscreamer.jsonassert.JSONAssert;
 
 public class PasswordControllerTest {
 
     @Test
     public void validPasswordFalse() {
-
-        PasswordController controller = new PasswordController();
-        Assert.assertFalse(controller.checkPassword("!@@#dsaQWF34678"));
-
-    }
-    @Test
-    public void validPasswordTrue() {
-
-        PasswordController controller = new PasswordController();
-        Assert.assertTrue(controller.checkPassword("AbTp9!fok"));
 
     }
 

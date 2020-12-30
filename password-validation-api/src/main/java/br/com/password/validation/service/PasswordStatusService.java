@@ -54,7 +54,7 @@ public class PasswordStatusService {
             return false;
         }
 
-        validationReturn = wordValidation.isNumeric();
+        validationReturn = wordValidation.IsNumeric();
         
         LOG.info("4 - Tem número: {} " , validationReturn );
         
@@ -62,7 +62,7 @@ public class PasswordStatusService {
             return false;
         }
 
-        validationReturn = wordValidation.isLetter();
+        validationReturn = wordValidation.IsLetter();
         
         LOG.info("5 - Tem letra: {} " , validationReturn );
         

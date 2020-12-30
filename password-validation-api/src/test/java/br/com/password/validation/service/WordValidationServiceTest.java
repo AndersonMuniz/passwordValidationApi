@@ -57,7 +57,7 @@ public class WordValidationServiceTest {
     public void caseIsNumericFalse() {
 
         WordValidationService wordValidationService = new WordValidationService("Aaav@#AQEWCXasc");
-        Assert.assertFalse(wordValidationService.isNumeric());
+        Assert.assertFalse(wordValidationService.IsNumeric());
 
     }
 
@@ -65,7 +65,7 @@ public class WordValidationServiceTest {
     public void caseIsNumericTrue() {
 
         WordValidationService wordValidationService = new WordValidationService("Aaav@#AQEWCXasc1 ");
-        Assert.assertTrue(wordValidationService.isNumeric());
+        Assert.assertTrue(wordValidationService.IsNumeric());
 
     }
 
@@ -73,7 +73,7 @@ public class WordValidationServiceTest {
     public void caseIsLetterFalse() {
 
         WordValidationService wordValidationService = new WordValidationService("12345678981125");
-        Assert.assertFalse(wordValidationService.isLetter());
+        Assert.assertFalse(wordValidationService.IsLetter());
 
     }
 
@@ -81,7 +81,7 @@ public class WordValidationServiceTest {
     public void caseIsLetterTrue() {
 
         WordValidationService wordValidationService = new WordValidationService("YYYYYYYYYYYYYYYY");
-        Assert.assertTrue(wordValidationService.isLetter());
+        Assert.assertTrue(wordValidationService.IsLetter());
 
     }
 
