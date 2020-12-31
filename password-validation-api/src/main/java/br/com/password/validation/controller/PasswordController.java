@@ -23,11 +23,8 @@ public class PasswordController {
         LOG.debug("Inicio do método checkPassword");
         LOG.info("Senha recebida : {}" , password);
 
-        PasswordStatusService passwordStatusService = new PasswordStatusService(password);
-
-//        validationReturn = passwordStatusService.PasswordValidation();
-
         ReturnStatusPasswordVO returnStatusPasswordVO = new ReturnStatusPasswordVO(password);
+
         returnStatusPasswordVO.isStatusPassword();
 
         LOG.debug("Fim do metrodo checkPassword: retorno da validação da senha = {}" , returnStatusPasswordVO );

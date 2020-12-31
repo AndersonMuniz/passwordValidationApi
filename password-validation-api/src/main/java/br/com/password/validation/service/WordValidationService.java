@@ -4,6 +4,7 @@ import br.com.password.validation.controller.PasswordController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static br.com.password.validation.constants.Constants.CARACTER_ESPECIAL;
 import static br.com.password.validation.constants.Constants.TAMANHO_MINIMO;
 
 public class WordValidationService {
